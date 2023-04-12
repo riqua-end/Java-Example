@@ -20,7 +20,9 @@ public class Ex14_StreamFilter {
 		intStream02 = IntStream.rangeClosed(1, 10);
 		System.out.println("=========");
 		//최종연산이 끝난 stream객체는 다시 사용할 수 없음
-		intStream02.filter(i -> i % 2 != 0).filter(i -> i % 3 != 0).forEach(System.out::println);
+//		intStream02.filter(i -> i % 2 != 0).filter(i -> i % 3 != 0).forEach(System.out::println);
+		intStream02.filter(i -> i % 2 != 0 && i % 3 != 0).forEach(System.out::println);
+		//위 아래는 동일한 결과를 얻는다.
 		//중간 연산은 여러번 처리 가능
 		
 		//sorted()중간처리 메서드
