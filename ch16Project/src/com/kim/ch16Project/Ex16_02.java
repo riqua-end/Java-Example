@@ -17,6 +17,8 @@ public class Ex16_02 {
 		//현재 port번호
 		System.out.println("url.getFile() : " + url.getFile());
 		//host와 포트번호를 제외한 경로와 자원이름 그리고 쿼리문 (인덱스는 제외)
+		System.out.println("url.getHost() : " + url.getHost());
+		//DNS (host명)
 		System.out.println("url.getPath() : " + url.getPath());
 		//host와 port를 제외하고 자원 이름까지 (쿼리문 제외)
 		System.out.println("url.getProtocol() : " + url.getProtocol());
